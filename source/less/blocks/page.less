@@ -6,17 +6,39 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  min-width: 320px;
+  padding: @padding;
+  width: 320px;
   min-height: 100%;
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 400;
   text-align: left;
-  // color: var(--font-color-primary);
-  // background-color: var(--page-bg);
+  color: var(--font-color-primary);
+  background-color: var(--white);
 }
 
 .page__body a {
   text-decoration: none;
+}
+
+.page__body img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.page__body ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page__body ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page__body p {
+  margin: 0;
 }

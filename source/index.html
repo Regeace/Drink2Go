@@ -19,18 +19,14 @@
       <div class="main-header__logo-container main-header__logo-container--nojs">
         <a class="main-header__logo logo" href="index.html">
           <!-- <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-image-extended.svg">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-image-original.svg">
-            <img class="logo__container" src="img/logo/logo-image-simplified.svg" width="" height="" alt="Логотип магазина Дринк2Гоу.">
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-extended.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-original.svg">
+            <img class="logo__container" src="img/logo/logo-simplified.svg" width="" height="" alt="Логотип магазина Дринк2Гоу.">
           </picture> -->
         </a>
       </div>
 
       <nav class="main-navigation main-navigation--special">
-        <button class="main-navigation__toggle main-navigation__toggle--nojs" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-          <span class="main-navigation__toggle-image"></span>
-        </button>
         <ul class="main-navigation__list main-navigation__list--closed main-navigation__list--nojs">
           <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--special main-navigation__link--current main-navigation__link--current-special" href="index.html">
@@ -53,7 +49,8 @@
             </a>
           </li>
         </ul>
-        <ul class="main-navigation__buttons-list">
+
+        <ul class="main-navigation__buttons">
           <a class="main-navigation__button main-navigation__button--login">
             <span class="main-navigation__button-text visually-hidden">Войти</span>
           </a>
@@ -61,6 +58,11 @@
             <span class="main-navigation__button-text visually-hidden">Корзина</span>
           </a>
         </ul>
+
+        <button class="main-navigation__toggle main-navigation__toggle--nojs" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <span class="main-navigation__toggle-image"></span>
+        </button>
       </nav>
     </header>
 
@@ -68,6 +70,7 @@
       <h1 class="visually-hidden">Дринк2Гоу</h1>
 
       <section class="slider">
+        <h2 class="visually-hidden">Товары со скидкой</h2>
         <div class="slider__container">
           <!-- <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/white.webp 1x, img/slider/white-2x.webp 2x">
@@ -75,10 +78,10 @@
             <source type="image/webp" srcset="img/slider/white-mobile.webp 1x, img/slider/white-mobile-2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/slider/white.png 1x, img/slider/white-2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/slider/white-tablet-2x.png 2x">
-            <img class="promo-header__image" src="img/slider/white-mobile.png" width="280" height="280" srcset="img/slider/white-mobile-2x.png 2x" alt="Декаф Флэт Уайт.">
+            <img class="slider__image" src="img/slider/white-mobile.png" width="280" height="280" srcset="img/slider/white-mobile-2x.png 2x" alt="Декаф Флэт Уайт.">
           </picture> -->
           <span class="slider__badge badge">Новинка!</span>
-          <h2 class="slider__title">
+          <h2 class="slider__title title-primary">
             Декаф Флэт Уайт
           </h2>
           <p class="slider__text">
@@ -94,13 +97,13 @@
 
       <section class="advantages">
         <span class="advantages__badge badge">Преимущества</span>
-        <h2 class="advantages__title">
+        <h2 class="advantages__title title title--primary">
           Главные причины выбрать Drink2Go
         </h2>
 
         <ul class="advantages__list">
           <li class="advantages__item advantages-item">
-            <h3 class="advantages-item__title">
+            <h3 class="advantages-item__title title title--secondary">
               Скорость
             </h3>
             <p class="advantages-item__text">
@@ -108,7 +111,7 @@
             </p>
           </li>
           <li class="advantages__item advantages-item">
-            <h3 class="advantages-item__title">
+            <h3 class="advantages-item__title title title--secondary">
               Удобство
             </h3>
             <p class="advantages-item__text">
@@ -116,7 +119,7 @@
             </p>
           </li>
           <li class="advantages__item advantages-item">
-            <h3 class="advantages-item__title">
+            <h3 class="advantages-item__title title title--secondary">
               Бодрость
             </h3>
             <p class="advantages-item__text">
@@ -124,7 +127,7 @@
             </p>
           </li>
           <li class="advantages__item advantages-item">
-            <h3 class="advantages-item__title">
+            <h3 class="advantages-item__title title title--secondary">
               Экологичность
             </h3>
             <p class="advantages-item__text">
@@ -136,7 +139,7 @@
 
       <section class="catalog">
         <span class="catalog__badge badge">Каталог</span>
-        <h2 class="catalog__title">
+        <h2 class="catalog__title title title--primary">
           Каталог кофейных напитков
         </h2>
 
@@ -259,7 +262,7 @@
                 </picture> -->
               </a>
               <a class="item-card__link-title" href="#">
-                <h3 class="item-card__title">
+                <h3 class="item-card__title title title--secondary">
                   Декаф Флэт Уайт
                 </h3>
               </a>
@@ -279,7 +282,7 @@
                 </picture> -->
               </a>
               <a class="item-card__link-title" href="#">
-                <h3 class="item-card__title">
+                <h3 class="item-card__title title title--secondary">
                   Декаф Флэт Уайт
                 </h3>
               </a>
@@ -299,7 +302,7 @@
                 </picture> -->
               </a>
               <a class="item-card__link-title" href="#">
-                <h3 class="item-card__title">
+                <h3 class="item-card__title title title--secondary">
                   Декаф Флэт Уайт
                 </h3>
               </a>
@@ -319,7 +322,7 @@
                 </picture> -->
               </a>
               <a class="item-card__link-title" href="#">
-                <h3 class="item-card__title">
+                <h3 class="item-card__title title title--secondary">
                   Декаф Флэт Уайт
                 </h3>
               </a>
@@ -339,7 +342,7 @@
                 </picture> -->
               </a>
               <a class="item-card__link-title" href="#">
-                <h3 class="item-card__title">
+                <h3 class="item-card__title title title--secondary">
                   Декаф Флэт Уайт
                 </h3>
               </a>
@@ -359,7 +362,7 @@
                 </picture> -->
               </a>
               <a class="item-card__link-title" href="#">
-                <h3 class="item-card__title">
+                <h3 class="item-card__title title title--secondary">
                   Декаф Флэт Уайт
                 </h3>
               </a>
@@ -376,19 +379,23 @@
           <ol class="cards__pagination pagination">
             <span class="visually-hidden">Пагинация.</span>
             <li class="pagination__button button button--special">
-              <span class="pagination__button-text">Назад</span>
+              <a class="pagination__link" href="#">
+                <span class="pagination__button-text">Назад</span>
+              </a>
             </li>
             <li class="pagination__button button button--special">
               <a class="pagination__link" href="#">1</a>
             </li>
-            <li class="pagination__button pagination__page--current button button--special">
+            <li class="pagination__button pagination__button--current button button--special">
               <a class="pagination__link" href="#">2</a>
             </li>
             <li class="pagination__button button button--special">
               <a class="pagination__link" href="#">3</a>
             </li>
             <li class="pagination__button button button--special">
-              <span class="pagination__button-text">Вперёд</span>
+              <a class="pagination__link" href="#">
+                <span class="pagination__button-text">Вперёд</span>
+              </a>
             </li>
           </ol>
         </div>
@@ -397,7 +404,7 @@
       <section class="map">
         <h2 class="visually-hidden">Магазин на карте</h2>
 
-        <div class="page-footer__map-container">
+        <div class="map__container">
           <!-- <picture>
             <source media="(min-width: 1440px)" srcset="img/map/map.jpg">
             <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
@@ -449,7 +456,7 @@
 
         <ul class="page-footer__navigation footer-navigation">
           <ul class="footer-navigation__list footer-navigation__shop">
-            <h4 class="footer-navigation__title">
+            <h4 class="footer-navigation__title title title--third">
               Интернет-магазин
             </h4>
             <li class="footer-navigation__item">
@@ -475,7 +482,7 @@
           </ul>
 
           <ul class="footer-navigation__list footer-navigation__media">
-            <h4 class="footer-navigation__title">
+            <h4 class="footer-navigation__title title title--third">
               Медиа
             </h4>
             <li class="footer-navigation__item">
@@ -496,7 +503,7 @@
           </ul>
 
           <ul class="footer-navigation__list footer-navigation__contacts">
-            <h4 class="footer-navigation__title">
+            <h4 class="footer-navigation__title title title--third">
               Контакты
             </h4>
             <li class="footer-navigation__item footer-navigation__item--special">
@@ -519,7 +526,7 @@
         </div>
     </footer>
 
-    <!-- <script src="js/navigation-button.js"></script> -->
+    <script src="js/navigation-button.js"></script>
     <!-- <script src="js/map.js"></script> -->
   </body>
 </html>
