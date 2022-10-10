@@ -1,8 +1,11 @@
 .slider {
+  padding: @padding;
   text-align: center;
+  background-color: var(--bg-color-second);
 }
 
 .slider__container {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -12,6 +15,14 @@
   padding-bottom: 10px;
 }
 
-.slider__badge {
-  padding-bottom: 4px;
+.slider__title {
+  padding-bottom: 10px;
+}
+
+.slider__text {
+  padding-bottom: 20px;
+}
+
+.slider__price-container {
+  padding: 0 25px 60px 25px;
 }

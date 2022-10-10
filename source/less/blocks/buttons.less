@@ -1,0 +1,131 @@
+.button {
+  padding: 8px 20px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color-lighter);
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: var(--primary-color-lighter);
+  }
+
+  &:active {
+    background-color: var(--primary-color-darker);
+  }
+
+  &:disabled {
+    background-color: var(--gray);
+  }
+
+  &--form {
+    min-width: 160px;
+    padding: 10px 14px 10px 14px;
+    font-size: 13px;
+  }
+
+  &--catalog {
+    padding-left: 46px;
+  }
+
+  &--special {
+    color: var(--primary-color);
+    background-color: var(--white);
+
+    &:hover {
+      color: var(--white);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: var(--white);
+    }
+
+    &:focus-visible {
+      color: var(--white);
+    }
+
+    &:focus-visible::before,
+    &:focus-visible::after {
+      background-color: var(--white);
+    }
+
+    &:active {
+      color: var(--white);
+    }
+
+    &:disabled {
+      color: var(--white);
+      background-color: var(--alternative-color);
+    }
+  }
+
+  &--pagination {
+    display: block;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  &--current {
+    font-weight: 600;
+    color: var(--font-color-primary);
+    background-color: var(--bg-color-first);
+    pointer-events: none;
+  }
+
+  &--arrow {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 4px);
+      width: 8px;
+      height: 2px;
+      background-color: var(--primary-color);
+    }
+
+    &:disabled {
+      &::before,
+      &::after {
+        background-color: var(--white);
+      }
+    }
+  }
+
+  &--left {
+    &::before {
+      top: calc(50% - 2px);
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      top: calc(50% + 2px);
+      transform: rotate(45deg);
+    }
+  }
+
+  &--right {
+    &::before {
+      top: calc(50% + 2px);
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      top: calc(50% - 2px);
+      transform: rotate(45deg);
+    }
+  }
+}

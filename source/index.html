@@ -8,6 +8,7 @@
     <meta name="description" content="Дринк2Гоу. Кофе без кофеина.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/montserratregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratsemibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserratbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <!-- <link rel="icon" href="favicon.ico"> -->
     <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"> -->
@@ -81,7 +82,7 @@
             <img class="slider__image" src="img/slider/white-mobile.png" width="280" height="280" srcset="img/slider/white-mobile-2x.png 2x" alt="Декаф Флэт Уайт.">
           </picture> -->
           <span class="slider__badge badge">Новинка!</span>
-          <h2 class="slider__title title-primary">
+          <h2 class="slider__title title title--slider">
             Декаф Флэт Уайт
           </h2>
           <p class="slider__text">
@@ -102,7 +103,7 @@
         </h2>
 
         <ul class="advantages__list">
-          <li class="advantages__item advantages-item">
+          <li class="advantages__item advantages__item--speed advantages-item">
             <h3 class="advantages-item__title title title--secondary">
               Скорость
             </h3>
@@ -110,7 +111,7 @@
               Готовый напиток всегда под рукой — просто открой банку
             </p>
           </li>
-          <li class="advantages__item advantages-item">
+          <li class="advantages__item advantages__item--convenience advantages-item">
             <h3 class="advantages-item__title title title--secondary">
               Удобство
             </h3>
@@ -118,7 +119,7 @@
               Легко помещается и в карман, и в маленькую сумочку
             </p>
           </li>
-          <li class="advantages__item advantages-item">
+          <li class="advantages__item advantages__item--vivacity advantages-item">
             <h3 class="advantages-item__title title title--secondary">
               Бодрость
             </h3>
@@ -126,7 +127,7 @@
               Сбалансированная доза кофеина даст мощный заряд энергии
             </p>
           </li>
-          <li class="advantages__item advantages-item">
+          <li class="advantages__item advantages__item--ecologic advantages-item">
             <h3 class="advantages-item__title title title--secondary">
               Экологичность
             </h3>
@@ -222,7 +223,7 @@
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__button">
-                  <input class="visually-hidden checkbox__input-button" type="checkbox" name="peru">
+                  <input class="visually-hidden checkbox__input-button" type="checkbox" name="peru" disabled>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__label-text">Перу</span>
                 </label>
@@ -230,11 +231,11 @@
             </ul>
           </fieldset>
 
-          <div class="filters__fieldset filters__fieldset--buttons fieldset">
-            <button class="fieldset__button button" type="submit">
+          <div class="filters__fieldset fieldset fieldset--buttons">
+            <button class="fieldset__button button button--form" type="submit">
               Применить фильтр
             </button>
-            <button class="fieldset__button button button--special" type="reset">
+            <button class="fieldset__button button button--form button--special" type="reset">
               Сбросить фильтр
             </button>
           </div>
@@ -256,10 +257,10 @@
           <ol class="cards__list">
             <li class="cards__item item-card">
               <a class="item-card__link-image" href="#">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/.webp 1x, img/-2x.webp 2x">
-                  <img class="promo-header__image" src="img/.png" width="130" height="188" srcset="img/.png 2x" alt="Декаф Флэт Уайт.">
-                </picture> -->
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/catalog/decaf-1.webp 1x, img/catalog/decaf-1-2x.webp 2x"> -->
+                  <img class="item-card__image" src="img/catalog/decaf-1.png" width="130" height="188" srcset="img/catalog/decaf-1-2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
               </a>
               <a class="item-card__link-title" href="#">
                 <h3 class="item-card__title title title--secondary">
@@ -269,17 +270,17 @@
               <p class="item-card__text">
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <div class="item-card__price-container price">
+              <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button price__buy-button--catalog button" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
               </div>
             </li>
             <li class="cards__item item-card">
               <a class="item-card__link-image" href="#">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/.webp 1x, img/-2x.webp 2x">
-                  <img class="promo-header__image" src="img/.png" width="130" height="188" srcset="img/.png 2x" alt="Декаф Флэт Уайт.">
-                </picture> -->
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/catalog/decaf-2.webp 1x, img/catalog/decaf-2-2x.webp 2x"> -->
+                  <img class="item-card__image" src="img/catalog/decaf-2.png" width="130" height="188" srcset="img/catalog/decaf-2-2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
               </a>
               <a class="item-card__link-title" href="#">
                 <h3 class="item-card__title title title--secondary">
@@ -289,17 +290,17 @@
               <p class="item-card__text">
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <div class="item-card__price-container price">
+              <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button price__buy-button--catalog button" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
               </div>
             </li>
             <li class="cards__item item-card">
               <a class="item-card__link-image" href="#">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/.webp 1x, img/-2x.webp 2x">
-                  <img class="promo-header__image" src="img/.png" width="130" height="188" srcset="img/.png 2x" alt="Декаф Флэт Уайт.">
-                </picture> -->
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/catalog/decaf-3.webp 1x, img/catalog/decaf-3-2x.webp 2x"> -->
+                  <img class="item-card__image" src="img/catalog/decaf-3.png" width="130" height="188" srcset="img/catalog/decaf-3-2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
               </a>
               <a class="item-card__link-title" href="#">
                 <h3 class="item-card__title title title--secondary">
@@ -309,17 +310,17 @@
               <p class="item-card__text">
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <div class="item-card__price-container price">
+              <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button price__buy-button--catalog button" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
               </div>
             </li>
             <li class="cards__item item-card">
               <a class="item-card__link-image" href="#">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/.webp 1x, img/-2x.webp 2x">
-                  <img class="promo-header__image" src="img/.png" width="130" height="188" srcset="img/.png 2x" alt="Декаф Флэт Уайт.">
-                </picture> -->
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/catalog/decaf-4.webp 1x, img/catalog/decaf-4-2x.webp 2x"> -->
+                  <img class="item-card__image" src="img/catalog/decaf-4.png" width="130" height="188" srcset="img/catalog/decaf-4-2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
               </a>
               <a class="item-card__link-title" href="#">
                 <h3 class="item-card__title title title--secondary">
@@ -329,17 +330,17 @@
               <p class="item-card__text">
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <div class="item-card__price-container price">
+              <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button price__buy-button--catalog button" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
               </div>
             </li>
             <li class="cards__item item-card">
               <a class="item-card__link-image" href="#">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/.webp 1x, img/-2x.webp 2x">
-                  <img class="promo-header__image" src="img/.png" width="130" height="188" srcset="img/.png 2x" alt="Декаф Флэт Уайт.">
-                </picture> -->
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/catalog/decaf-5.webp 1x, img/catalog/decaf-5-2x.webp 2x"> -->
+                  <img class="item-card__image" src="img/catalog/decaf-5.png" width="130" height="188" srcset="img/catalog/decaf-5-2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
               </a>
               <a class="item-card__link-title" href="#">
                 <h3 class="item-card__title title title--secondary">
@@ -349,17 +350,17 @@
               <p class="item-card__text">
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <div class="item-card__price-container price">
+              <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button price__buy-button--catalog button" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
               </div>
             </li>
             <li class="cards__item item-card">
               <a class="item-card__link-image" href="#">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/.webp 1x, img/-2x.webp 2x">
-                  <img class="promo-header__image" src="img/.png" width="130" height="188" srcset="img/.png 2x" alt="Декаф Флэт Уайт.">
-                </picture> -->
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/catalog/decaf-6.webp 1x, img/catalog/decaf-6-2x.webp 2x"> -->
+                  <img class="item-card__image" src="img/catalog/decaf-6.png" width="130" height="188" srcset="img/catalog/decaf-6-2x.png 2x" alt="Декаф Флэт Уайт.">
+                </picture>
               </a>
               <a class="item-card__link-title" href="#">
                 <h3 class="item-card__title title title--secondary">
@@ -369,33 +370,34 @@
               <p class="item-card__text">
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <div class="item-card__price-container price">
+              <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button price__buy-button--catalog button" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
               </div>
             </li>
           </ol>
 
           <ol class="cards__pagination pagination">
             <span class="visually-hidden">Пагинация.</span>
-            <li class="pagination__button button button--special">
-              <a class="pagination__link" href="#">
-                <span class="pagination__button-text">Назад</span>
-              </a>
+            <li class="pagination__item">
+              <button class="pagination__button button button--special button--pagination button--arrow button--left" type="button">
+                <span class="pagination__text">Назад</span>
+              </button>
             </li>
-            <li class="pagination__button button button--special">
-              <a class="pagination__link" href="#">1</a>
+            <li class="pagination__item">
+              <button class="pagination__button button button--special button--pagination" type="button"> 1
+              </button>
             </li>
-            <li class="pagination__button pagination__button--current button button--special">
-              <a class="pagination__link" href="#">2</a>
+            <li class="pagination__item">
+              <button class="pagination__button button button--special button--pagination button--current" type="button">2</button>
             </li>
-            <li class="pagination__button button button--special">
-              <a class="pagination__link" href="#">3</a>
+            <li class="pagination__item">
+              <button class="pagination__button button button--special button--pagination" type="button">3</button>
             </li>
-            <li class="pagination__button button button--special">
-              <a class="pagination__link" href="#">
-                <span class="pagination__button-text">Вперёд</span>
-              </a>
+            <li class="pagination__item">
+              <button class="pagination__button button button--special button--pagination button--arrow button--right" type="button">
+                <span class="pagination__text">Вперёд</span>
+              </button>
             </li>
           </ol>
         </div>
@@ -403,14 +405,13 @@
 
       <section class="map">
         <h2 class="visually-hidden">Магазин на карте</h2>
-
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map/map.jpg">
+          <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
+          <img class="map__static-image map__static-image--nojs" src="img/map/map-mobile.jpg" width="320" height="420" alt="Магазин Дринк2Гоу на карте.">
+        </picture>
         <div class="map__container">
-          <!-- <picture>
-            <source media="(min-width: 1440px)" srcset="img/map/map.jpg">
-            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
-            <img class="page-footer__map-static page-footer__map-static--nojs" src="img/map/map-mobile.jpg" width="320" height="362" alt="Магазин Дринк2Гоу на карте.">
-          </picture>
-          <iframe class="page-footer__map page-footer__map--nojs"
+          <!-- <iframe class="page-footer__map page-footer__map--nojs"
             src="https://yandex.ru/map-widget/v1/-/CCUFIDuVPB"
             allowfullscreen
             title="Магазин Кэт энержди по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
@@ -453,80 +454,82 @@
             </a>
           </li>
         </ul>
+      </div>
 
-        <ul class="page-footer__navigation footer-navigation">
-          <ul class="footer-navigation__list footer-navigation__shop">
-            <h4 class="footer-navigation__title title title--third">
-              Интернет-магазин
-            </h4>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                Каталог
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                Доставка
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                Способы оплаты
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                О нас
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-navigation__list footer-navigation__media">
-            <h4 class="footer-navigation__title title title--third">
-              Медиа
-            </h4>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                Блог
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                Информация для СМИ
-              </a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">
-                Правовая информация
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-navigation__list footer-navigation__contacts">
-            <h4 class="footer-navigation__title title title--third">
-              Контакты
-            </h4>
-            <li class="footer-navigation__item footer-navigation__item--special">
-              <address class="footer-navigation__address">
-                Санкт-Петербург, набережная реки Карповки, дом 5
-              </address>
-            </li>
-            <li class="footer-navigation__item footer-navigation__item--special">
-              <address class="footer-navigation__address">
-                <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-              </address>
-            </li>
-          </ul>
+      <ul class="page-footer__navigation footer-navigation">
+        <ul class="footer-navigation__list footer-navigation__list--shop">
+          <h4 class="footer-navigation__title title title--third">
+            Интернет-магазин
+          </h4>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              Каталог
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              Способы оплаты
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              О нас
+            </a>
+          </li>
         </ul>
 
-        <div class="page-footer__developer developer">
-          <span class="developer__text"></span>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener nofollow" target="_blank">
-          </a>
-        </div>
+        <ul class="footer-navigation__list footer-navigation__list--media">
+          <h4 class="footer-navigation__title title title--third">
+            Медиа
+          </h4>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              Блог
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              Информация для СМИ
+            </a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">
+              Правовая информация
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-navigation__list footer-navigation__list--contacts">
+          <h4 class="footer-navigation__title title title--third">
+            Контакты
+          </h4>
+          <li class="footer-navigation__item footer-navigation__item--special">
+            <address class="footer-navigation__address">
+              Санкт-Петербург, набережная реки Карповки, дом 5
+            </address>
+          </li>
+          <li class="footer-navigation__item footer-navigation__item--special">
+            <address class="footer-navigation__address">
+              <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+            </address>
+          </li>
+        </ul>
+      </ul>
+
+      <div class="page-footer__developer developer">
+        <span class="developer__text">Разработано в</span>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener nofollow" target="_blank">
+          <span class="developer__link-text">HTML Academy</span>
+        </a>
+      </div>
     </footer>
 
     <script src="js/navigation-button.js"></script>
-    <!-- <script src="js/map.js"></script> -->
+    <script src="js/map.js"></script>
   </body>
 </html>
