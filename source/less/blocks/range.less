@@ -18,6 +18,10 @@
     left: 10px;
     background-color: var(--primary-color-lighter);
   }
+
+  &:disabled::before {
+    background-color: var(--gray);
+  }
 }
 
 .range__toggle {
@@ -27,6 +31,8 @@
   background-color: var(--white);
   border: 2px solid var(--primary-color-lighter);
   border-radius: 50%;
+  outline: 2px solid var(--white);
+  outline-offset: -4px;
 
   &--min  {
     top: -10px;
@@ -36,6 +42,20 @@
   &--max {
     top: -10px;
     right: 20px;
+  }
+
+  &:focus-visible {
+    background-color: var(--primary-color);
+  }
+
+  &:hover {
+    background-color: #ddd6f3;
+  }
+
+  &:disabled {
+    border-color: var(--gray);
+    outline: none;
+    pointer-events: none;
   }
 }
 
@@ -70,4 +90,12 @@
   border: 2px solid var(--primary-color-lighter);
   border-radius: 4px;
   outline: none;
+
+  &:focus-visible {
+    border-color: var(--primary-color-darker);
+  }
+
+  &:disabled {
+    border-color: var(--gray);
+  }
 }

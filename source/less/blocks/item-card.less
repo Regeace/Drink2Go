@@ -1,9 +1,19 @@
 .item-card {
   display: flex;
   flex-direction: column;
+  max-width: 280px;
   padding: 20px;
   background-color: var(--white);
   border-radius: 4px;
+
+  &:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .item-card__link-image {
