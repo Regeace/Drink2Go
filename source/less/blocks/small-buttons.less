@@ -1,0 +1,30 @@
+.small-buttons {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.small-buttons__button {
+  width: 62px;
+  height: 4px;
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &:not(:last-of-type) {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:focus-visible {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    background-color: var(--primary-color);
+  }
+}

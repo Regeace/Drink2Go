@@ -1,0 +1,76 @@
+.slider-button {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &--left {
+    left: 0;
+
+    &::before {
+      top: calc(50% - 5px);
+    }
+
+    &::after {
+      top: calc(50% + 5px);
+    }
+  }
+
+  &--right {
+    right: 0;
+
+    &::before {
+      top: calc(50% + 5px);
+    }
+
+    &::after {
+      top: calc(50% - 5px);
+    }
+  }
+
+  &::before {
+    width: 16px;
+    left: calc(50% - 8px);
+  }
+
+  &::after {
+    width: 16px;
+    left: calc(50% - 8px);
+  }
+
+  &--left:hover,
+  &--left:focus-visible {
+    background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &--right:hover,
+  &--right:focus-visible {
+    background-image: linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &--left:active {
+    background-image: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &--right:active {
+    background-image: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+
+    &::before {
+      background-color: var(--gray);
+    }
+
+    &::after {
+      background-color: var(--gray);
+    }
+  }
+}
