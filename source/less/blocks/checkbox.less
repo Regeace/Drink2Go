@@ -42,6 +42,8 @@
   &:disabled + .checkbox__mark {
     background-color: var(--alternative-color);
     border-color: var(--alternative-color);
+    pointer-events: none;
+    cursor: auto;
   }
 
   &:checked:disabled + .checkbox__mark::before {

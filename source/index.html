@@ -10,61 +10,62 @@
     <link rel="preload" href="fonts/montserratregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserratsemibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserratbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <!-- <link rel="icon" href="favicon.ico"> -->
-    <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"> -->
-    <!-- <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> -->
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-    <header class="main-header main-header--nojs">
-      <div class="main-header__logo-container main-header__logo-container--nojs">
-        <a class="main-header__logo logo" href="index.html">
-          <!-- <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-extended.svg">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-original.svg">
-            <img class="logo__container" src="img/logo/logo-simplified.svg" width="" height="" alt="Логотип магазина Дринк2Гоу.">
-          </picture> -->
-        </a>
-      </div>
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="logo__container" src="img/logo/logo-mobile.svg" width="" height="" alt="Логотип магазина Дринк2Гоу.">
+        </picture>
+        <span class="main-header__logo-text">
+          Интернет-магазин кофейных напитков
+        </span>
+      </a>
 
-      <nav class="main-navigation main-navigation--special">
+      <nav class="main-navigation">
         <ul class="main-navigation__list main-navigation__list--closed main-navigation__list--nojs">
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--special main-navigation__link--current main-navigation__link--current-special" href="index.html">
+            <a class="main-navigation__link main-navigation__link--current" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--special" href="#">
+            <a class="main-navigation__link" href="#">
               Каталог
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--special" href="#">
+            <a class="main-navigation__link" href="#">
               Доставка
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--special" href="#">
+            <a class="main-navigation__link" href="#">
               О нас
             </a>
           </li>
         </ul>
-
-        <ul class="main-navigation__buttons">
-          <a class="main-navigation__button main-navigation__button--login">
-            <span class="main-navigation__button-text visually-hidden">Войти</span>
-          </a>
-          <a class="main-navigation__button main-navigation__button--basket">
-            <span class="main-navigation__button-text visually-hidden">Корзина</span>
-          </a>
-        </ul>
-
-        <button class="main-navigation__toggle main-navigation__toggle--nojs" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-          <span class="main-navigation__toggle-image"></span>
-        </button>
       </nav>
+
+      <ul class="navigation-buttons">
+        <a class="navigation-buttons__button navigation-buttons__button--login">
+          <span class="navigation-buttons__button-text visually-hidden">Войти</span>
+        </a>
+        <a class="navigation-buttons__button navigation-buttons__button--basket">
+          <span class="navigation-buttons__button-text visually-hidden">Корзина</span>
+        </a>
+      </ul>
+
+      <button class="navigation-toggle navigation-toggle--nojs" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+        <span class="navigation-toggle__image navigation-toggle__image--nojs"></span>
+      </button>
     </header>
 
     <main class="main-page">
@@ -72,15 +73,15 @@
 
       <section class="slider">
         <h2 class="visually-hidden">Товары со скидкой</h2>
-        <div class="slider__container">
-          <!-- <picture>
+        <div class="slider__container slider__container--current">
+          <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/white.webp 1x, img/slider/white-2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/white-tablet.webp 1x, img/slider/white-tablet-2x.webp 2x">
             <source type="image/webp" srcset="img/slider/white-mobile.webp 1x, img/slider/white-mobile-2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/slider/white.png 1x, img/slider/white-2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/slider/white-tablet-2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/white-tablet.png 1x, img/slider/white-tablet-2x.png 2x">
             <img class="slider__image" src="img/slider/white-mobile.png" width="280" height="280" srcset="img/slider/white-mobile-2x.png 2x" alt="Декаф Флэт Уайт.">
-          </picture> -->
+          </picture>
           <span class="slider__badge badge">Новинка!</span>
           <h2 class="slider__title title title--slider">
             Декаф Флэт Уайт
@@ -91,6 +92,52 @@
           <div class="slider__price-container price">
             <span class="price__old">295₽</span>
             <span class="price__current">225₽</span>
+            <button class="price__buy-button button" type="button">Заказать</button>
+          </div>
+        </div>
+
+        <div class="slider__container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/lavender.webp 1x, img/slider/lavender-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/lavender-tablet.webp 1x, img/slider/lavender-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/slider/lavender-mobile.webp 1x, img/slider/lavender-mobile-2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/slider/lavender.png 1x, img/slider/lavender-2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/lavender-tablet.png 1x, img/slider/lavender-tablet-2x.png 2x">
+            <img class="slider__image" src="img/slider/lavender-mobile.png" width="280" height="280" srcset="img/slider/lavender-mobile-2x.png 2x" alt="Декаф Флэт Уайт.">
+          </picture>
+          <span class="slider__badge badge">Новинка!</span>
+          <h2 class="slider__title title title--slider">
+            Лавандовый Латте
+          </h2>
+          <p class="slider__text">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+          </p>
+          <div class="slider__price-container price">
+            <span class="price__old">285₽</span>
+            <span class="price__current">265₽</span>
+            <button class="price__buy-button button" type="button">Заказать</button>
+          </div>
+        </div>
+
+        <div class="slider__container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/espresso.webp 1x, img/slider/espresso-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/espresso-tablet.webp 1x, img/slider/espresso-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/slider/espresso-mobile.webp 1x, img/slider/espresso-mobile-2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/slider/espresso.png 1x, img/slider/espresso-2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/espresso-tablet.png 1x, img/slider/espresso-tablet-2x.png 2x">
+            <img class="slider__image" src="img/slider/espresso-mobile.png" width="280" height="280" srcset="img/slider/espresso-mobile-2x.png 2x" alt="Декаф Флэт Уайт.">
+          </picture>
+          <span class="slider__badge badge">Новинка!</span>
+          <h2 class="slider__title title title--slider">
+            Тройной Эспрессо
+          </h2>
+          <p class="slider__text">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+          </p>
+          <div class="slider__price-container price">
+            <span class="price__old">395₽</span>
+            <span class="price__current">375₽</span>
             <button class="price__buy-button button" type="button">Заказать</button>
           </div>
         </div>
@@ -542,7 +589,7 @@
       </div>
     </footer>
 
-    <script src="js/navigation-button.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/navigation-toggle.js"></script>
+    <!-- <script src="js/map.js"></script> -->
   </body>
 </html>
