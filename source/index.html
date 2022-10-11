@@ -146,10 +146,25 @@
 
         <form class="catalog__filters filters" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="filters__fieldset fieldset range">
-            <legend class="fieldset__title">
+            <legend class="fieldset__title fieldset__title--range">
               Цена
             </legend>
-            <input class="filters__field" type="range" name="price-range">
+            <div class="range__container">
+              <div class="range__bar">
+                <button class="range__toggle range__toggle--min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range__toggle range__toggle--max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+              <div class="range__input-container">
+                <input class="range__input range__input--min" type="number" id="price-min" name="price-min" placeholder="0">
+                <label class="visually-hidden" for="price-min">Oт.</label>
+                <input class="range__input range__input--max" type="number" id="price-max" name="price-max" value="9000">
+                <label class="visually-hidden" for="price-max">До.</label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filters__fieldset fieldset radio">
