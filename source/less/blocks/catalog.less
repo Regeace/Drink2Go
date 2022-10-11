@@ -1,10 +1,16 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 50px @padding 44px @padding;
   background-color: var(--bg-color-first);
 }
 
+.catalog__title {
+  padding-bottom: 20px;
+}
+
 .catalog__filters {
   padding-bottom: 40px;
+  min-width: calc(320px - 2*@padding);
 }
