@@ -1,9 +1,21 @@
 .catalog {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px @padding 44px @padding;
   background-color: var(--bg-color-first);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    height: 100%;
+    width: 100vw;
+    background-color: var(--bg-color-first);
+    z-index: -1;
+  }
 }
 
 .catalog__title {

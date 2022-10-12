@@ -21,7 +21,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img class="logo__container" src="img/logo/logo-mobile.svg" width="32" height="36" alt="Логотип магазина Дринк2Гоу.">
+          <img class="main-header__logo-image" src="img/logo/logo-mobile.svg" width="32" height="36" alt="Логотип магазина Дринк2Гоу.">
         </picture>
         <span class="main-header__logo-text">
           Интернет-магазин кофейных напитков
@@ -29,9 +29,9 @@
       </a>
 
       <nav class="main-navigation">
-        <ul class="main-navigation__list main-navigation__list--closed main-navigation__list--nojs">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--current" href="index.html">
+        <ul class="main-navigation__list main-navigation__list--closed main-navigation__list--open main-navigation__list--nojs">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link" href="index.html">
               Главная
             </a>
           </li>
@@ -59,7 +59,7 @@
             <svg class="navigation-buttons__button-image navigation-buttons__button-image--login" width="16" height="16" viewBox="0 0 16 16" fill="#333333">
               <use href="img/icons/sprite.svg#login"></use>
             </svg>
-            <span class="navigation-buttons__button-text visually-hidden">Войти</span>
+            <span class="navigation-buttons__button-text">Войти</span>
           </a>
         </li>
         <li class="navigation-buttons__item">
@@ -67,7 +67,7 @@
             <svg class="navigation-buttons__button-image navigation-buttons__button-image--basket" width="16" height="16" viewBox="0 0 16 16" fill="#333333">
               <use href="img/icons/sprite.svg#basket"></use>
             </svg>
-            <span class="navigation-buttons__button-text visually-hidden">Корзина</span>
+            <span class="navigation-buttons__button-text">Корзина</span>
           </a>
         </li>
       </ul>
@@ -83,7 +83,7 @@
 
       <section class="slider">
         <h2 class="visually-hidden">Товары со скидкой</h2>
-        <div class="slider__container slider__container--current">
+        <div class="slider__container slider__container--decaf slider__container--current">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/white.webp 1x, img/slider/white-2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/white-tablet.webp 1x, img/slider/white-tablet-2x.webp 2x">
@@ -106,7 +106,7 @@
           </div>
         </div>
 
-        <div class="slider__container">
+        <div class="slider__container slider__container--lavender">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/lavender.webp 1x, img/slider/lavender-2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/lavender-tablet.webp 1x, img/slider/lavender-tablet-2x.webp 2x">
@@ -129,7 +129,7 @@
           </div>
         </div>
 
-        <div class="slider__container">
+        <div class="slider__container slider__container--espresso">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/espresso.webp 1x, img/slider/espresso-2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/espresso-tablet.webp 1x, img/slider/espresso-tablet-2x.webp 2x">
@@ -224,7 +224,7 @@
                 </button>
               </div>
               <div class="range__input-container">
-                <input class="range__input range__input--min" type="number" id="price-min" name="price-min" placeholder="0">
+                <input class="range__input range__input--min" type="number" id="price-min" name="price-min" value="0">
                 <label class="visually-hidden" for="price-min">Oт.</label>
                 <input class="range__input range__input--max" type="number" id="price-max" name="price-max" value="9000">
                 <label class="visually-hidden" for="price-max">До.</label>
@@ -629,6 +629,6 @@
     </footer>
 
     <script src="js/navigation-toggle.js"></script>
-    <!-- <script src="js/map.js"></script> -->
+    <script src="js/map.js"></script>
   </body>
 </html>

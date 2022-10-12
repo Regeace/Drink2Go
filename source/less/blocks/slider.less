@@ -3,15 +3,47 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: @padding;
   text-align: center;
-  background-color: var(--bg-color-second);
 }
 
 .slider__container {
   display: none;
   position: relative;
   max-width: 400px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  &--decaf {
+    background-color: var(--bg-color-second);
+
+    &::before {
+      background-color: var(--bg-color-second);
+    }
+  }
+
+  &--lavender {
+    background-color: var(--bg-color-fourt);
+
+    &::before {
+      background-color: var(--bg-color-fourt);
+    }
+  }
+
+  &--espresso {
+    background-color: var(--bg-color-third);
+
+    &::before {
+      background-color: var(--bg-color-third);
+    }
+  }
 
   &--current {
     display: flex;
@@ -20,6 +52,7 @@
 }
 
 .slider__image {
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 

@@ -19,7 +19,7 @@
     background-color: var(--primary-color-lighter);
   }
 
-  &:disabled::before {
+  &--disabled::before {
     background-color: var(--gray);
   }
 }
@@ -90,6 +90,10 @@
   border: 2px solid var(--primary-color-lighter);
   border-radius: 4px;
   outline: none;
+
+  &--min {
+    color: var(--gray);
+  }
 
   &:focus-visible {
     border-color: var(--primary-color-darker);
