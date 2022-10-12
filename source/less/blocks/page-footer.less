@@ -8,8 +8,18 @@
 
 .page-footer__links-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  min-width: calc(320px - 2*@padding);
+  padding-bottom: 15px;
+}
+
+.page-footer__logo {
+  margin-right: auto;
+}
+
+.page-footer__logo-text {
+  display: none;
 }
 
 .page-footer__developer {

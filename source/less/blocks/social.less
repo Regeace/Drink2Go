@@ -1,7 +1,49 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
+}
+
+.social__item {
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: var(--white);
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.social__link {
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+
+  &:hover .social__image {
+    fill: var(--primary-color);
+  }
+
+  &:focus-visible {
+    background-color: var(--secondary-color);
+  }
+
+  &:focus-visible .social__image {
+    fill: var(--primary-color);
+  }
+
+  &:active {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+}
+
+.social__image {
+  margin-top: 5px;
 }

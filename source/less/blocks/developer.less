@@ -5,6 +5,39 @@
   color: var(--gray);
 }
 
+.developer__link {
+  outline: none;
+
+  &:hover .developer__link-text {
+    color: var(--primary-color);
+  }
+
+  &:hover .developer__link-image {
+    fill: var(--primary-color);
+  }
+
+  &:focus-visible .developer__link-text {
+    color: var(--primary-color);
+  }
+
+  &:focus-visible .developer__link-image {
+    fill: var(--primary-color);
+  }
+
+  &:active .developer__link-text {
+    color: var(--primary-color-darker);
+  }
+
+  &:active .developer__link-image {
+    fill: var(--primary-color-darker);
+  }
+}
+
 .developer__link-text {
   color: var(--gray);
+}
+
+.developer__link-image {
+  display: inline-block;
+  vertical-align: middle;
 }

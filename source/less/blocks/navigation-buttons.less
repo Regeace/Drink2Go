@@ -1,16 +1,38 @@
 .navigation-buttons {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   align-self: center;
   justify-self: end;
 }
 
+.navigation-buttons__item {
+  display: flex;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  &:last-of-type {
+    margin-right: 10px;
+  }
+}
+
 .navigation-buttons__button {
+  min-width: 40px;
+  min-height: 40px;
   padding: 10px;
 
   &:active {
     background-color: var(--secondary-color);
   }
+}
+
+.navigation-buttons__button-image {
+  display: block;
+  margin-left: 2px;
 }

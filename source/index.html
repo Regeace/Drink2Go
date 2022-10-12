@@ -21,7 +21,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img class="logo__container" src="img/logo/logo-mobile.svg" width="" height="" alt="Логотип магазина Дринк2Гоу.">
+          <img class="logo__container" src="img/logo/logo-mobile.svg" width="32" height="36" alt="Логотип магазина Дринк2Гоу.">
         </picture>
         <span class="main-header__logo-text">
           Интернет-магазин кофейных напитков
@@ -54,12 +54,22 @@
       </nav>
 
       <ul class="navigation-buttons">
-        <a class="navigation-buttons__button navigation-buttons__button--login">
-          <span class="navigation-buttons__button-text visually-hidden">Войти</span>
-        </a>
-        <a class="navigation-buttons__button navigation-buttons__button--basket">
-          <span class="navigation-buttons__button-text visually-hidden">Корзина</span>
-        </a>
+        <li class="navigation-buttons__item">
+          <a class="navigation-buttons__button" tabindex="0">
+            <svg class="navigation-buttons__button-image navigation-buttons__button-image--login" width="16" height="16" viewBox="0 0 16 16" fill="#333333">
+              <use href="img/icons/sprite.svg#login"></use>
+            </svg>
+            <span class="navigation-buttons__button-text visually-hidden">Войти</span>
+          </a>
+        </li>
+        <li class="navigation-buttons__item">
+          <a class="navigation-buttons__button" tabindex="0">
+            <svg class="navigation-buttons__button-image navigation-buttons__button-image--basket" width="16" height="16" viewBox="0 0 16 16" fill="#333333">
+              <use href="img/icons/sprite.svg#basket"></use>
+            </svg>
+            <span class="navigation-buttons__button-text visually-hidden">Корзина</span>
+          </a>
+        </li>
       </ul>
 
       <button class="navigation-toggle navigation-toggle--nojs" type="button">
@@ -342,7 +352,9 @@
               </p>
               <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">
+                  В корзину
+                </button>
               </div>
             </li>
             <li class="cards__item item-card" tabindex="0">
@@ -362,7 +374,9 @@
               </p>
               <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">
+                  В корзину
+                </button>
               </div>
             </li>
             <li class="cards__item item-card" tabindex="0">
@@ -382,7 +396,9 @@
               </p>
               <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">
+                  В корзину
+                </button>
               </div>
             </li>
             <li class="cards__item item-card" tabindex="0">
@@ -402,7 +418,9 @@
               </p>
               <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">
+                  В корзину
+                </button>
               </div>
             </li>
             <li class="cards__item item-card" tabindex="0">
@@ -422,7 +440,9 @@
               </p>
               <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">
+                  В корзину
+                </button>
               </div>
             </li>
             <li class="cards__item item-card" tabindex="0">
@@ -442,7 +462,9 @@
               </p>
               <div class="item-card__price-container price price--catalog">
                 <span class="price__current">225₽</span>
-                <button class="price__buy-button button button--catalog" type="button">В корзину</button>
+                <button class="price__buy-button button button--catalog" type="button">
+                  В корзину
+                </button>
               </div>
             </li>
           </ol>
@@ -490,35 +512,39 @@
 
     <footer class="page-footer">
       <div class="page-footer__links-container">
-        <a class="page-footer__logo logo" href="index.html">
-          <!-- <picture>
-            <source media="(min-width: 768px)" srcset="img/logo/logo-image-original.svg">
-            <img class="logo__container" src="img/logo/logo-image-simplified.svg" width="" height="" alt="Логотип магазина Дринк2Гоу.">
-          </picture> -->
+        <a class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <img class="logo__container" src="img/logo/logo-tablet.svg" width="82" height="36" alt="Логотип магазина Дринк2Гоу.">
+          </picture>
+          <span class="page-footer__logo-text">
+            Интернет-магазин кофейных напитков
+          </span>
         </a>
+
         <ul class="page-footer__social-list social">
           <li class="social__item">
             <span class="visually-hidden">Вконтакте.</span>
             <a class="social__link" href="https://vk.com/htmlacademy" rel="noopener nofollow" target="_blank">
-              <!-- <svg class="social__image" width="" height="" viewBox="0 0  " fill="">
+              <svg class="social__image" width="20" height="20" viewBox="0 0 20 20" fill="#BDBDBD">
                 <use href="img/icons/sprite.svg#vk"></use>
-              </svg> -->
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Pinterest.</span>
-            <a class="social__link" href="" rel="noopener nofollow" target="_blank">
-              <!-- <svg class="social__image" width="28" height="22" viewBox="0 0  " fill="">
+            <a class="social__link" href="https://ru.pinterest.com/keks_is_html_academy" rel="noopener nofollow" target="_blank">
+              <svg class="social__image" width="22" height="22" viewBox="0 0 22 22" fill="#BDBDBD">
                 <use href="img/icons/sprite.svg#pinterest"></use>
-              </svg> -->
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <span class="visually-hidden">Одноклассники.</span>
-            <a class="social__link" href="https://t.me/htmlacademy" rel="noopener nofollow" target="_blank">
-              <!-- <svg class="social__image" width="" height="" viewBox="0 0  " fill="">
+            <a class="social__link" href="https://ok.ru/htmlacademy" rel="noopener nofollow" target="_blank">
+              <svg class="social__image" width="20" height="20" viewBox="0 0 20 20" fill="#BDBDBD">
                 <use href="img/icons/sprite.svg#ok"></use>
-              </svg> -->
+              </svg>
             </a>
           </li>
         </ul>
@@ -572,18 +598,20 @@
           </li>
         </ul>
 
-        <ul class="footer-navigation__list footer-navigation__list--contacts">
+        <ul class="footer-navigation__list">
           <h4 class="footer-navigation__title title title--third">
             Контакты
           </h4>
-          <li class="footer-navigation__item footer-navigation__item--special">
+          <li class="footer-navigation__item footer-navigation__item--address">
             <address class="footer-navigation__address">
               Санкт-Петербург, набережная реки Карповки, дом 5
             </address>
           </li>
-          <li class="footer-navigation__item footer-navigation__item--special">
+          <li class="footer-navigation__item footer-navigation__item--phone">
             <address class="footer-navigation__address">
-              <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+              <a class="footer-navigation__link" href="tel:+79999999999">
+                +7 (999) 999-99-99
+              </a>
             </address>
           </li>
         </ul>
@@ -593,6 +621,9 @@
         <span class="developer__text">Разработано в</span>
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener nofollow" target="_blank">
           <span class="developer__link-text">HTML Academy</span>
+          <svg class="developer__link-image" width="12" height="16" viewBox="0 0 12 16" fill="#BDBDBD">
+            <use href="img/icons/sprite.svg#html-academy"></use>
+          </svg>
         </a>
       </div>
     </footer>
