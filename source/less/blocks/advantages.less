@@ -14,22 +14,34 @@
   padding: 0;
 }
 
-.advantages__item {
-  text-align: center;
-
-  &--speed {
-    background-image: url(../img/backgrounds/stopwatch.svg);
+@media (min-width: @tablet) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 100px;
   }
 
-  &--convenience {
-    background-image: url(../img/backgrounds/pocket.svg);
+  .advantages__title {
+    padding-bottom: 60px;
   }
 
-  &--vivacity {
-    background-image: url(../img/backgrounds/lightning.svg);
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .advantages {
+    max-width:calc(@desktop ) ;
+    padding: 100px @padding-desktop 120px @padding-desktop;
   }
 
-  &--ecologic {
-    background-image: url(../img/backgrounds/leaf.svg);
+  .advantages__title {
+    padding-bottom: 80px;
+  }
+
+  .advantages__list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

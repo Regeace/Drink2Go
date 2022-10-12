@@ -1,11 +1,55 @@
 .advantages-item {
+  text-align: center;
   background-repeat: no-repeat;
   background-size: 46px 52px;
   background-position: 50% 32px;
-  max-width: 400px;
+
+  &--speed {
+    background-image: url(../img/backgrounds/stopwatch.svg);
+  }
+
+  &--convenience {
+    background-image: url(../img/backgrounds/pocket.svg);
+  }
+
+  &--vivacity {
+    background-image: url(../img/backgrounds/lightning.svg);
+  }
+
+  &--ecologic {
+    background-image: url(../img/backgrounds/leaf.svg);
+  }
 }
 
 .advantages-item__title {
   padding-top: 98px;
   padding-bottom: 4px;
+}
+
+@media (min-width: @tablet) {
+  .advantages-item {
+    max-width: 1300px;
+    text-align: left;
+    padding-left: 82px;
+    background-position: 10px 0;
+  }
+
+  .advantages-item__title {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .advantages-item__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .advantages-item {
+    text-align: center;
+    padding-top: 76px;
+    padding-left: 0;
+    background-position: 50% 0;
+  }
 }
