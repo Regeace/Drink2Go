@@ -1,6 +1,7 @@
 .footer-navigation {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .footer-navigation__list {
@@ -82,4 +83,38 @@
 .footer-navigation__address {
   padding-left: 20px;
   font-style: normal;
+}
+
+@media (min-width: @tablet) {
+  .footer-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 30px;
+  }
+
+  .footer-navigation__title {
+    padding-top: 0;
+  }
+
+  .footer-navigation__list {
+    padding-bottom: 10px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    &:first-of-type::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .footer-navigation__title  {
+    padding-top: 9px;
+  }
 }
