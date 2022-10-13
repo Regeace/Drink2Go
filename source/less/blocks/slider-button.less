@@ -74,3 +74,16 @@
     }
   }
 }
+
+@media (min-width: @tablet) {
+  .slider-button {
+    width: 80px;
+
+    &--arrow {
+      &::before,
+      &::after {
+        display: initial;
+      }
+    }
+  }
+}

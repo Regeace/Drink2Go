@@ -12,6 +12,12 @@
   cursor: pointer;
   outline: none;
 
+  &--current {
+    background-color: var(--primary-color);
+    pointer-events: none;
+    cursor: none;
+  }
+
   &:not(:last-of-type) {
     margin-right: 8px;
   }
