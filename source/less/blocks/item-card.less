@@ -22,8 +22,8 @@
 }
 
 .item-card__image {
-  padding-top: 20px;
-  padding-bottom: 24px;
+  margin-top: 20px;
+  margin-bottom: 24px;
 }
 
 .item-card__link-title {
@@ -32,4 +32,29 @@
 
 .item-card__text {
   padding-bottom: 16px;
+}
+
+@media (min-width: @tablet) {
+  .item-card {
+    max-width: 349px;
+    padding: 30px;
+  }
+
+  .item-card__image {
+    margin-bottom: 30px;
+  }
+
+  .item-card__link-title {
+    margin-bottom: 10px;
+  }
+
+  .item-card__text {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .item-card {
+    max-width: 318px;
+  }
 }

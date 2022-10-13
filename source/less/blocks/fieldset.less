@@ -35,3 +35,36 @@
     margin-bottom: 24px;
   }
 }
+
+@media (min-width: @tablet) {
+  .fieldset {
+    align-self: start;
+
+    &--buttons {
+      grid-column: 1 / -1;
+      grid-row: -2 / -1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
+
+  .fieldset__button {
+    &:not(:last-child) {
+      margin: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .fieldset__button {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+}

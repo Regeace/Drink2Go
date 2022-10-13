@@ -26,3 +26,36 @@
   padding-bottom: 40px;
   min-width: calc(320px - 2*@padding);
 }
+
+@media (min-width: @tablet) {
+  .catalog {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 0 30px;
+    padding: 100px @padding-desktop 120px @padding-desktop;
+  }
+
+  .catalog__badge {
+    grid-column: 1 / -1;
+  }
+
+  .catalog__title {
+    grid-column: 1 / -1;
+    padding-bottom: 40px;
+  }
+
+  .catalog__filters {
+    grid-column: 1 / 2;
+  }
+
+  .catalog__cards {
+    grid-column: 2 / 3;
+  }
+}

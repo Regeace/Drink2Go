@@ -103,3 +103,35 @@
     border-color: var(--gray);
   }
 }
+
+@media (min-width: @tablet) {
+  .range__container {
+    min-width: 220px;
+  }
+
+  .range__bar {
+    &::before {
+      width: 190px;
+    }
+  }
+
+  .range__input {
+    width: 93px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .range__container {
+    min-width: 318px;
+  }
+
+  .range__bar {
+    &::before {
+      width: 280px;
+    }
+  }
+
+  .range__input {
+    width: 140px;
+  }
+}

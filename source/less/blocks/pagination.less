@@ -9,3 +9,23 @@
 .pagination__text {
   display: none;
 }
+
+@media (min-width: @tablet) {
+  .pagination {
+    align-self: flex-end;
+  }
+
+  .pagination__text {
+    display: initial;
+  }
+
+  .pagination__button {
+    &--left {
+      min-width: 150px;
+    }
+
+    &--right {
+      min-width: 150px;
+    }
+  }
+}

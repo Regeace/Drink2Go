@@ -11,3 +11,32 @@
 .cards__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards__select {
+    padding-bottom: 30px;
+  }
+
+  .cards__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
+  .cards__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .cards__list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 60px;
+  }
+}

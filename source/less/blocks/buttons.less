@@ -5,11 +5,11 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--white);
+  user-select: none;
   background-color: var(--primary-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
 
   &:hover {
     background-color: var(--primary-color-lighter);
@@ -36,6 +36,8 @@
 
   &--catalog {
     padding-left: 46px;
+    font-size: 14px;
+    line-height: 20px;
     background-image: url(../img/icons/catalog-basket.svg);
     background-repeat: no-repeat;
     background-size: 20px 16px;
@@ -131,6 +133,45 @@
     &::after {
       top: calc(50% - 2px);
       transform: rotate(45deg);
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .button {
+    &--form {
+      min-width: auto;
+      padding: 8px 4px;
+    }
+
+    &--arrow {
+      &::before,
+      &::after {
+        height: 0;
+      }
+    }
+
+    &--hidden {
+      color: var(--bg-color-first);
+      background-color: var(--bg-color-first);
+      pointer-events: none;
+      cursor: none;
+    }
+
+    &--hidden {
+      &:focus-visible {
+        color: var(--bg-color-first);
+        background-color: var(--bg-color-first);
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .button {
+    &--form {
+      min-width: 150px;
+      padding: 8px 4px;
     }
   }
 }
