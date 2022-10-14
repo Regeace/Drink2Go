@@ -1,5 +1,23 @@
+// Меню навигации, интерактивная кнопка
+
+const openNavButton = document.querySelector('.navigation-toggle');
+const changeNavButtonImage = document.querySelector('.navigation-toggle__image');
+const mainNavigationShow = document.querySelector('.main-navigation__list');
+
+document.querySelector('.navigation-toggle').classList.remove('navigation-toggle--nojs');
+document.querySelector('.main-navigation__list').classList.remove('main-navigation__list--nojs');
+document.querySelector('.navigation-toggle__image').classList.remove('navigation-toggle__image--nojs');
+
+const toggleNavButton = () => {
+  changeNavButtonImage.classList.toggle('navigation-toggle__image--open');
+  mainNavigationShow.classList.toggle('main-navigation__list--closed');
+}
+
+openNavButton.addEventListener('click', toggleNavButton)
+
+// Слайдер
+
 const sliderElement = document.querySelector('.slider');
-// const sliderButtonElements = sliderElement.querySelectorAll('.slider-button');
 const sliderLeftButtonElement = sliderElement.querySelector('.slider-button--left');
 const sliderRightButtonElement = sliderElement.querySelector('.slider-button--right');
 const sliderSmallButtonElements = sliderElement.querySelectorAll('.small-buttons__button');
@@ -57,10 +75,14 @@ const onChangeSliderSmallButtonClick = (evt) => {
   changeCurrentSliderNumber(newSliderNumber, sliderContainerElements);
 };
 
-
 sliderLeftButtonElement.addEventListener('click', onSliderLeftButtonClick);
 sliderRightButtonElement.addEventListener('click', onSliderRightButtonClick);
 
 sliderSmallButtonElements.forEach((element) => {
   element.addEventListener('click', onChangeSliderSmallButtonClick)
 });
+
+// Карта
+
+document.querySelector('.map__static-image').classList.toggle('map__static-image--nojs');
+document.querySelector('.map__container').classList.toggle('map__container--nojs');
