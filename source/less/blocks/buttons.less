@@ -38,7 +38,7 @@
     padding-left: 46px;
     font-size: 14px;
     line-height: 20px;
-    background-image: url(../img/icons/catalog-basket.svg);
+    background-image: url("../img/icons/catalog-basket.svg");
     background-repeat: no-repeat;
     background-size: 20px 16px;
     background-position: 20px 50%;
@@ -104,11 +104,12 @@
       background-color: var(--primary-color);
     }
 
-    &:disabled {
-      &::before,
-      &::after {
-        background-color: var(--white);
-      }
+    &:disabled::before {
+      background-color: var(--white);
+    }
+
+    &:disabled::after {
+      background-color: var(--white);
     }
   }
 
@@ -156,9 +157,7 @@
       background-color: var(--bg-color-first);
       pointer-events: none;
       cursor: none;
-    }
 
-    &--hidden {
       &:focus-visible {
         color: var(--bg-color-first);
         background-color: var(--bg-color-first);

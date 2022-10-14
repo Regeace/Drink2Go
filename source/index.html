@@ -152,13 +152,13 @@
           </div>
         </div>
 
-        <button class="slider__button slider-button button--arrow button--left slider-button--arrow slider-button--left" type="button"></button>
+        <button class="slider__button slider-button slider-button--arrow slider-button--left" type="button"></button>
         <div class="slider__small-buttons-container small-buttons">
           <button class="small-buttons__button small-buttons__button--current" type="button"></button>
           <button class="small-buttons__button" type="button"></button>
           <button class="small-buttons__button" type="button"></button>
         </div>
-        <button class="slider__button slider-button button--arrow button--right slider-button--arrow slider-button--right" type="button"></button>
+        <button class="slider__button slider-button slider-button--arrow slider-button--right" type="button"></button>
       </section>
 
       <section class="advantages">
@@ -211,7 +211,7 @@
 
         <form class="catalog__filters filters" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="filters__fieldset fieldset range">
-            <legend class="fieldset__title">
+            <legend class="fieldset__title fieldset__title--range">
               Цена
             </legend>
             <div class="range__container">
@@ -469,29 +469,31 @@
             </li>
           </ol>
 
-          <ol class="cards__pagination pagination">
+          <div class="cards__pagination-container">
             <span class="visually-hidden">Пагинация.</span>
-            <li class="pagination__item">
-              <button class="pagination__button pagination__button--left button button--special button--pagination button--arrow button--left" type="button">
-                <span class="pagination__text">Назад</span>
-              </button>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__button button button--special button--pagination" type="button"> 1
-              </button>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__button button button--special button--pagination button--current" type="button">2</button>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__button button button--special button--pagination" type="button">3</button>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__button pagination__button--right button button--special button--pagination button--arrow button--right" type="button">
-                <span class="pagination__text">Вперёд</span>
-              </button>
-            </li>
-          </ol>
+            <ol class="cards__pagination pagination">
+              <li class="pagination__item">
+                <button class="pagination__button pagination__button--left button button--special button--pagination button--arrow button--left" type="button">
+                  <span class="pagination__text">Назад</span>
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button button button--special button--pagination" type="button"> 1
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button button button--special button--pagination button--current" type="button">2</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button button button--special button--pagination" type="button">3</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button pagination__button--right button button--special button--pagination button--arrow button--right" type="button">
+                  <span class="pagination__text">Вперёд</span>
+                </button>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
@@ -500,7 +502,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/map/map.jpg">
           <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
-          <img class="map__static-image map__static-image--nojs" src="img/map/map-mobile.jpg" width="320" height="420" alt="Магазин Дринк2Гоу на карте.">
+          <img class="map__static-image map__static-image--nojs" src="img/map/map-mobile.jpg" loading="lazy" width="320" height="420" alt="Магазин Дринк2Гоу на карте.">
         </picture>
         <iframe class="map__container map__container--nojs"
           src="https://yandex.ru/map-widget/v1/-/CCUZi4cBSD"
@@ -511,7 +513,10 @@
     </main>
 
     <footer class="page-footer">
+      <h2 class="visually-hidden">Ссылки на соцсети, навигация по сайту</h2>
+
       <div class="page-footer__links-container">
+        <h3 class="visually-hidden">Ссылки</h3>
         <a class="page-footer__logo" href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo/logo-desktop.svg">
@@ -550,72 +555,79 @@
         </ul>
       </div>
 
-      <ul class="page-footer__navigation footer-navigation">
-        <ul class="footer-navigation__list footer-navigation__list--shop">
+      <div class="page-footer__navigation footer-navigation">
+        <h3 class="visually-hidden">Навигация по сайту</h3>
+        <div class="footer-navigation__container">
           <h4 class="footer-navigation__title title title--third">
             Интернет-магазин
           </h4>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              Каталог
-            </a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              Способы оплаты
-            </a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              О нас
-            </a>
-          </li>
-        </ul>
+          <ul class="footer-navigation__list footer-navigation__list--shop">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                Способы оплаты
+              </a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <ul class="footer-navigation__list footer-navigation__list--media">
+        <div class="footer-navigation__container">
           <h4 class="footer-navigation__title title title--third">
             Медиа
           </h4>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              Блог
-            </a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              Информация для СМИ
-            </a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link" href="#">
-              Правовая информация
-            </a>
-          </li>
-        </ul>
+          <ul class="footer-navigation__list footer-navigation__list--media">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                Информация для СМИ
+              </a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">
+                Правовая информация
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <ul class="footer-navigation__list">
+        <div class="footer-navigation__container">
           <h4 class="footer-navigation__title title title--third">
             Контакты
           </h4>
-          <li class="footer-navigation__item footer-navigation__item--address">
-            <address class="footer-navigation__address">
-              Санкт-Петербург, набережная реки Карповки, дом 5
-            </address>
-          </li>
-          <li class="footer-navigation__item footer-navigation__item--phone">
-            <address class="footer-navigation__address">
-              <a class="footer-navigation__link" href="tel:+79999999999">
-                +7 (999) 999-99-99
-              </a>
-            </address>
-          </li>
-        </ul>
-      </ul>
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item footer-navigation__item--address">
+              <address class="footer-navigation__address">
+                Санкт-Петербург, набережная реки Карповки, дом 5
+              </address>
+            </li>
+            <li class="footer-navigation__item footer-navigation__item--phone">
+              <address class="footer-navigation__address">
+                <a class="footer-navigation__link" href="tel:+79999999999">
+                  +7 (999) 999-99-99
+                </a>
+              </address>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div class="page-footer__developer developer">
         <span class="developer__text">Разработано в</span>
