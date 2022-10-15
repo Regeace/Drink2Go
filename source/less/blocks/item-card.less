@@ -23,7 +23,7 @@
 
 .item-card__image {
   margin-top: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .item-card__link-title {
@@ -31,17 +31,19 @@
 }
 
 .item-card__text {
+  padding-right: 2px;
   padding-bottom: 16px;
 }
 
 @media (min-width: @tablet) {
   .item-card {
-    max-width: 349px;
+    min-width: 349px;
     padding: 30px;
   }
 
   .item-card__image {
-    margin-bottom: 30px;
+    margin-top: 18px;
+    margin-bottom: 26px;
   }
 
   .item-card__link-title {
@@ -55,6 +57,7 @@
 
 @media (min-width: @desktop) {
   .item-card {
+    min-width: initial;
     max-width: 318px;
   }
 }

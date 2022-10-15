@@ -7,7 +7,7 @@
   padding-left: 34px;
 
   &:not(:last-child) {
-    padding-bottom: 21px;
+    padding-bottom: 26px;
   }
 }
 
@@ -76,4 +76,12 @@
   height: 24px;
   border: 2px solid var(--gray);
   border-radius: 50%;
+}
+
+@media (min-width: @tablet) {
+  .radio__item {
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
 }

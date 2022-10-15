@@ -55,10 +55,6 @@
     &:not(:last-of-type) {
       margin-right: 10px;
     }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 
   .navigation-buttons__button {
@@ -73,11 +69,26 @@
       fill: var(--primary-color);
     }
   }
+
+  .navigation-buttons__button-image {
+    margin-top: 2px;
+  }
 }
 
 @media (min-width: @desktop) {
+  .navigation-buttons__item {
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
   .navigation-buttons__button {
     display: flex;
+    padding: 30px 22px;
 
     &:hover {
       color: var(--primary-color);
@@ -96,6 +107,7 @@
     position: initial;
     width: initial;
     height: initial;
+    align-self: center;
     margin: 0;
     font-weight: 500;
     font-size: 12px;

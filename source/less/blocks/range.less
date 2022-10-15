@@ -103,6 +103,7 @@
 @media (min-width: @tablet) {
   .range__container {
     min-width: 220px;
+    padding-left: 7px;
   }
 
   .range__bar {
@@ -119,15 +120,18 @@
 @media (min-width: @desktop) {
   .range__container {
     min-width: 318px;
+    padding-left: 0;
   }
 
   .range__bar {
+    margin-bottom: 33px;
+
     &::before {
       width: 280px;
     }
   }
 
   .range__input {
-    width: 140px;
+    width: 135px;
   }
 }

@@ -16,7 +16,7 @@
 
 @media (min-width: @tablet) {
   .advantages {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
 
@@ -27,7 +27,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 30px;
+    gap: 50px 9px;
   }
 }
 
@@ -43,5 +43,7 @@
 
   .advantages__list {
     grid-template-columns: repeat(4, 1fr);
+    width: calc(@desktop - 2 * @padding-desktop);
+    gap: 50px 30px;
   }
 }

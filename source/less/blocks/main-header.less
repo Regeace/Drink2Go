@@ -8,7 +8,7 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   align-self: center;
-  padding: 10px;
+  padding: 15px 10px 10px 20px;
 }
 
 .main-header__logo-text {
@@ -17,7 +17,7 @@
 
 @media (min-width: @tablet) {
   .main-header {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 92px 4fr 1fr;
     grid-template-rows: auto;
     padding: 0 @padding;
     gap: 0 10px;
@@ -36,7 +36,7 @@
 
 @media (min-width: @desktop) {
   .main-header {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 350px 1fr 300px;
     padding: 0 @padding-desktop;
   }
 
@@ -54,6 +54,7 @@
 
   .main-header__logo-text {
     display: initial;
+    align-self: center;
     max-width: 126px;
     font-size: 12px;
     line-height: 16px;
