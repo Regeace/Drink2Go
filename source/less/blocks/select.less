@@ -1,6 +1,7 @@
 .select {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   justify-content: space-between;
   font-weight: 600;
   font-size: 16px;
@@ -9,12 +10,15 @@
 
 .select__field {
   max-width: 158px;
+  height: 32px;
+  padding: 4px 5px;
   font-family: var(--main-font);
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   color: var(--primary-color);
+  background-color: var(--bg-color-first);
   border: none;
   border-radius: 5px;
 
@@ -26,6 +30,15 @@
     outline: none;
     background-color: var(--secondary-color);
   }
+
+  &:active {
+    background-color: var(--bg-color-first);
+  }
+}
+
+.select__option {
+  color: var(--font-color-primary);
+  background-color: var(--white);
 }
 
 @media (min-width: @tablet) {
